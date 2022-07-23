@@ -1,0 +1,249 @@
+@import "./components/header.scss";
+
+.slider {
+  position: relative;
+  height: 600px;
+
+  .arrow {
+    position: absolute;
+    top: 50%;
+    background: white;
+    border-radius: 50%;
+    border: 2px solid black;
+    cursor: pointer;
+    transition: all 0.2s linear;
+    z-index: 5;
+
+    img {
+      height: 65px;
+    }
+
+    &:hover {
+      background: #e0e0e0;
+      box-shadow: 0px 0px 15px white;
+
+      img {
+        height: 63px;
+      }
+    }
+  }
+
+  .left-arrow {
+    transform: rotateY(180deg);
+    left: 5%;
+  }
+
+  .right-arrow {
+    right: 6%;
+  }
+
+  .slider-images {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    background: #ffea6633;
+
+    img {
+      width: 97%;
+      border-radius: 30px;
+      object-fit: cover;
+      height: 600px;
+      opacity: 0;
+      transition: opacity 0.2s linear;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    img.active {
+      opacity: 1;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    display: none;
+  }
+}
+
+main {
+  padding: 4rem 2rem;
+}
+
+.products {
+  position: relative;
+
+  .products-heading {
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    font-weight: bold;
+  }
+
+  .left-arrow,
+  .right-arrow {
+    transition: all 0.3s linear;
+    cursor: pointer;
+    border-radius: 50%;
+
+    img {
+      width: 60px;
+    }
+
+    &:hover {
+      background: #e0e0e0;
+      box-shadow: 0px 0px 15px white;
+    }
+
+    &.disable {
+      display: none;
+    }
+  }
+
+  .left-arrow {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: rotate(180deg) translateY(50%);
+
+    @media screen and (max-width: 700px) {
+      left: -1.5rem;
+    }
+  }
+
+  .right-arrow {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+
+    @media screen and (max-width: 700px) {
+      right: -1.5rem;
+    }
+  }
+
+  .products-items {
+    padding: 2rem 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    min-height: 500px;
+
+    @media screen and (max-width: 1110px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media screen and (max-width: 770px) {
+      grid-template-columns: 1fr;
+    }
+
+    @media screen and (max-width: 700px) {
+      padding: 2rem 1rem;
+    }
+
+    &--box {
+      width: fit-content;
+      padding: 20px;
+      max-width: 270px;
+      margin: auto;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+
+      .product-head {
+        position: relative;
+        margin-bottom: 1rem;
+
+        .price-tag {
+          position: absolute;
+          top: -7%;
+          right: -10%;
+          font-size: 25px;
+          font-weight: bold;
+          background: red;
+          color: white;
+          padding: 3px 11px;
+          border-radius: 20px;
+          transform: rotateZ(25deg);
+
+          small {
+            font-size: 15px;
+            margin-right: 3px;
+          }
+        }
+      }
+      .product-name {
+        font-size: 17px;
+        line-height: 1.4;
+      }
+    }
+  }
+}
+
+.categories-items {
+  padding: 3rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 2rem;
+
+  @media screen and (max-width: 1110px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media screen and (max-width: 700px) {
+    grid-template-columns: 1fr;
+  }
+
+  .item--box {
+    text-align: center;
+    border: 3px solid black;
+    min-height: 341px;
+    display: grid;
+    place-content: center;
+    font-size: 2rem;
+    border-radius: 25px;
+    background-position: center;
+    background-size: cover;
+    transition: all 0.3s ease-in-out;
+    filter: grayscale(0.5);
+
+    @media screen and (max-width: 400px) {
+      min-height: 235px;
+    }
+
+    a {
+      transition: all 0.3s ease-in-out;
+      cursor: pointer;
+      color: black;
+    }
+
+    &:hover {
+      filter: grayscale(0);
+
+      a {
+        background: #000000;
+        padding: 7px 30px;
+        color: white;
+        border-radius: 30px;
+      }
+    }
+  }
+
+  .item--box--1 {
+    background-image: url("https://thumbor.forbes.com/thumbor/fit-in/900x510/https://www.forbes.com/uk/advisor/wp-content/uploads/2020/11/phones-switch-apps.jpg");
+  }
+
+  .item--box--2 {
+    background-image: url("https://images.unsplash.com/photo-1618424181497-157f25b6ddd5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bGFwdG9wJTIwY29tcHV0ZXJ8ZW58MHx8MHx8&w=1000&q=80");
+  }
+
+  .item--box--3 {
+    background-image: url("https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZmFzaGlvbiUyMGJsb2d8ZW58MHx8MHx8&w=1000&q=80");
+  }
+
+  .item--box--4 {
+    background-image: url("https://images.theconversation.com/files/45159/original/rptgtpxd-1396254731.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=754&fit=clip");
+  }
+}

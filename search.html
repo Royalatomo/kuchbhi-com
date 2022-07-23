@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results - Headphones</title>
+    <link rel="stylesheet" href="/css/search.css">
+    <link rel="stylesheet" href="/css/default.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-logo">
+                <a href="/">
+                    <img src="/assets/kuchbhi.png" alt="Logo">
+                </a>
+            </div>
+
+            <div class="header-location">
+                <a href="/my-account.html">
+                    <p class="header-location--text"></p>
+                </a>
+            </div>
+        </div>
+
+        <span class="header-search-container">
+            <div class="header-searchbox">
+                <input type="text" placeholder="Search Here...">
+                <img src="/assets/search.png" alt="search">
+            </div>
+
+            <div class="hamburger">
+                <img src="/assets/hamburger.png" alt="hamburger" class="ham-icon">
+                <ul class="hamburger-options">
+                    <li class="close-btn"><img src="/assets/close.png" alt=""></li>
+                    <li><a href="/">Home</a></li>
+                    <li><a class="mob-change-add" href="/my-account.html">Address Change</a></li>
+                    <li><a class="mob-orders" href="/orders.html">Orders</a></li>
+                    <li><a href="/cart.html">Cart</a></li>
+                </ul>
+            </div>
+        </span>
+
+        <div class="container">
+            <a href="/orders.html" class="header-orders">Orders</a>
+
+            <a href="/cart.html">
+                <div class="header-cart">
+                    <img src="/assets/cart.png" alt="Logo">
+                    <div class="cart-item-count">0</div>
+                </div>
+            </a>
+        </div>
+    </header>
+
+    <div class="filters">
+
+        <div class="select-container">
+            <div id="delivery" class="select">
+                <p>Delivery: <span data-value="30+">30+ Days</span></p>
+                <img src="/assets/down-arrow.png" alt="arrow">
+                <div class="options">
+                    <div data-value="30+" class="select-option">30+ Days</div>
+                    <div data-value="20" class="select-option">20 Days</div>
+                    <div data-value="10" class="select-option">10 Days</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="select-container">
+            <div id="brand" class="select">
+                <p>Brand: <span data-value="all">All</span></p>
+                <img src="/assets/down-arrow.png" alt="arrow">
+                <div class="options">
+                    <div data-value="all" class="select-option">All</div>
+                    <div data-value="samsung" class="select-option">Samsung</div>
+                    <div data-value="apple" class="select-option">Apple</div>
+                    <div data-value="boAt" class="select-option">boAt</div>
+                    <div data-value="jbl" class="select-option">JBL</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="select-container">
+            <div id="sort" class="select">
+                <p>Sort: <span data-value="rhl">Review H-L</span></p>
+                <img src="/assets/down-arrow.png" alt="arrow">
+                <div class="options">
+                    <div class="select-option" data-value="rhl">Review H-L</div>
+                    <div class="select-option" data-value="rlh">Review L-H</div>
+                    <div class="select-option" data-value="phl">Price H-L</div>
+                    <div class="select-option" data-value="plh">Price L-H</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="results">
+    </div>
+
+    <div class="page-navigation">
+        
+    </div>
+    <script type="module" src="./js/search.js"></script>
+</body>
+
+</html>

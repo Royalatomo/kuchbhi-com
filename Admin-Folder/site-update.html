@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Site Update</title>
+    <link rel="stylesheet" href="/css/site-update.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-logo">
+            <a href="/">
+                <img src="/assets/kuchbhi.png" alt="Logo">
+            </a>
+        </div>
+        <div class="container">
+            <a href="/product.html">Product</a>
+            <a href="/users.html">Manage Users</a>
+            <a href="/site-update.html" class="active">Site Update</a>
+            <button class="logout">Logout</button>
+        </div>
+
+        <div class="hamburger">
+            <img src="/assets/hamburger.png" alt="hamburger" class="ham-icon">
+            <ul class="hamburger-options">
+                <li class="close-btn"><img src="/assets/close.png" alt=""></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/product.html">Product</a></li>
+                <li><a href="/users.html">Manage Users</a></li>
+                <li><a href="/site-update.html">Site Update</a></li>
+                <li><button class="logout">Logout</button></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="holder main-display">
+            <h2 class="heading">Main Display Carousel</h2>
+            <div class="input-container">
+                <div class="input">
+                    <input type="text" placeholder="ImageKit Link">
+                    <img src="./assets/close.png" alt="">
+                </div>
+            </div>
+            <button class="add">+</button>
+        </div>
+
+        <div class="holder products-display">
+            <h2 class="heading">Display Products</h2>
+            <div class="card-container">
+            </div>
+
+            <div class="card-add">
+                <input class="title" type="text" placeholder="Enter Title">
+                <input class="query" type="text" placeholder="Enter Query">
+                <button class="add">+</button>
+            </div>
+        </div>
+
+        <div class="holder categories">
+            <h2 class="heading">Categroies</h2>
+            <div class="card-container">
+            </div>
+
+            <div class="card-add">
+                <input class="cat" type="text" placeholder="Enter Category">
+                <input class="query" type="text" placeholder="Enter Query">
+                <input class="img" type="text" placeholder="ImageKit Link">
+                <button class="add">+</button>
+            </div>
+        </div>
+
+        <button class="save">Save</button>
+    </main>
+
+    <script type="module" src="./js/site-update.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+@import "./components/header.scss";
+
+main {
+  display: grid;
+  place-content: center;
+  grid-gap: 2rem;
+  margin: 4rem 2rem;
+
+  label {
+    font-size: 21px;
+    font-weight: bold;
+    margin-right: 2rem;
+  }
+
+  input {
+    border: 2px solid rgb(79, 79, 79);
+    padding: 8px 20px;
+    font-size: 20px;
+    border-radius: 40px;
+
+    @media screen and(max-width: 350px) {
+      padding: 8px 13px;
+      font-size: 17px;
+    }
+  }
+
+  button {
+    font-size: 20px;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 40px;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 0 10px #666666;
+    cursor: pointer;
+
+    &.save {
+      background: green;
+      margin-right: 2rem;
+    }
+
+    &.logout {
+      background: red;
+    }
+  }
+}

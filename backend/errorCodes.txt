@@ -1,0 +1,18 @@
+0: Email Not Found -- Means that the email is not registred in the DB
+1: Wrong email format -- Means the email format is wrong and it is not a correct email address
+2: User already exists -- Means there is already a user in database
+3: wait 10s before resending the code -- As the Name suggests
+4: Missing field value -- Means some field values are not provided which are required to carry out the request
+
+5: No code found for this email -- Means there isn't any code in DB for varifing this email
+6: Code has expired -- Means the code has reached his time for expiring (default: 20mins)
+7: wrong verification code -- Means the code created and send does not match
+8: Password is incorrect -- Means the given password does not match with the stored password
+9: Invalid session token -- Means the token givin doesn't have a active session
+
+10: No user found -- Means there isn't a user with the Id
+11: Unauthorized request -- Means you don't have permission to do this action
+12: No product found -- Means there isn't a product with the Id
+13: Page out of index -- Means the products does not devide further
+
+1000: Something went wrong -- Means a unusual error occured

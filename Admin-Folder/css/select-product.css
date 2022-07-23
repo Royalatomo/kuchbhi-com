@@ -1,0 +1,227 @@
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background: #f9e8a1;
+  padding: 15px 10px; }
+  @media screen and (max-width: 500px) {
+    .header {
+      justify-content: center; } }
+  @media screen and (max-width: 500px) {
+    .header {
+      justify-content: space-evenly; } }
+  .header .header-logo {
+    margin: 0 auto; }
+    .header .header-logo img {
+      width: 150px;
+      margin-right: 2rem;
+      cursor: pointer; }
+    @media screen and (max-width: 930px) {
+      .header .header-logo {
+        max-width: 120px; } }
+  .header .container {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: space-evenly; }
+    .header .container a, .header .container button {
+      font-size: 23px;
+      font-weight: bold;
+      letter-spacing: 1px; }
+      .header .container a:hover, .header .container a.active, .header .container button:hover, .header .container button.active {
+        color: #03a9f4;
+        text-shadow: 1px 1px 2px #00000078; }
+    .header .container button:hover {
+      color: #e91e63; }
+    @media screen and (max-width: 440px) {
+      .header .container {
+        width: 100%; } }
+    @media screen and (max-width: 730px) {
+      .header .container {
+        display: none; } }
+  .header .hamburger {
+    margin: 0 auto; }
+    .header .hamburger .hamburger-options {
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 70vw;
+      height: 100vh;
+      list-style: none;
+      background: #f9e8a1;
+      border: 2px solid #c98600;
+      padding: 3rem 1rem;
+      transform: translateX(100%);
+      transition: transform 0.3s linear;
+      opacity: 0;
+      z-index: -20; }
+      .header .hamburger .hamburger-options li a, .header .hamburger .hamburger-options li button {
+        font-size: 25px;
+        line-height: 2;
+        font-weight: bold;
+        color: #793d00; }
+        .header .hamburger .hamburger-options li a:hover, .header .hamburger .hamburger-options li button:hover {
+          text-decoration: underline; }
+      .header .hamburger .hamburger-options .close-btn {
+        text-align: end; }
+      @media screen and (max-width: 730px) {
+        .header .hamburger .hamburger-options {
+          opacity: 1;
+          z-index: 20; } }
+      @media screen and (max-width: 400px) {
+        .header .hamburger .hamburger-options {
+          width: 100vw; } }
+    .header .hamburger .ham-icon {
+      width: 25px;
+      display: none; }
+      @media screen and (max-width: 730px) {
+        .header .hamburger .ham-icon {
+          display: block; } }
+  .header .hamburger-options.active {
+    transform: translateX(0); }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+body {
+  font-family: sans-serif; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer; }
+
+main {
+  padding: 2rem 4rem; }
+  main .holder {
+    margin-bottom: 3.5rem; }
+    main .holder .heading {
+      font-size: 25px;
+      width: fit-content;
+      background: #ffc107;
+      padding: 10px 30px;
+      border-radius: 10px;
+      margin-bottom: 1.5rem; }
+    main .holder .input-container {
+      display: grid;
+      grid-gap: 1rem; }
+      main .holder .input-container .input {
+        border: 3px solid #8d8d8d;
+        border-radius: 40px;
+        overflow: hidden;
+        height: fit-content;
+        display: flex;
+        align-items: center; }
+        main .holder .input-container .input input {
+          padding: 10px 20px;
+          border: none;
+          font-size: 20px;
+          flex-grow: 1; }
+          main .holder .input-container .input input:focus {
+            outline: none; }
+      main .holder .input-container .input-labeled {
+        display: flex;
+        align-items: center; }
+        main .holder .input-container .input-labeled label {
+          margin-right: 2rem;
+          font-size: 25px;
+          font-weight: bold; }
+        main .holder .input-container .input-labeled input {
+          border: 3px solid #8d8d8d;
+          border-radius: 40px;
+          padding: 10px 20px;
+          font-size: 20px;
+          flex-grow: 1; }
+          main .holder .input-container .input-labeled input:focus {
+            outline: none; }
+    main .holder .tag-container {
+      display: flex; }
+      main .holder .tag-container .tag {
+        margin-right: 2rem;
+        background: #009688;
+        position: relative;
+        height: fit-content;
+        padding: 7px 15px;
+        border-radius: 7px;
+        margin-top: 1rem;
+        font-size: 20px;
+        font-weight: bold;
+        color: white; }
+        main .holder .tag-container .tag span {
+          position: absolute;
+          top: 0;
+          right: 0;
+          transform: translate(50%, -50%); }
+    main .holder .card-container {
+      display: grid;
+      gap: 2rem; }
+      main .holder .card-container .entry {
+        display: flex;
+        align-items: center;
+        width: fit-content;
+        background: #dedede;
+        padding: 5px 15px;
+        border-radius: 10px;
+        flex-wrap: wrap-reverse;
+        line-height: 1.5; }
+        main .holder .card-container .entry .text {
+          margin-right: 2rem;
+          font-size: 20px;
+          font-weight: bold; }
+          main .holder .card-container .entry .text span {
+            color: #00827d;
+            margin-left: 5px; }
+    main .holder .card-add {
+      margin-top: 1rem; }
+      main .holder .card-add input {
+        font-size: 20px;
+        border: 2px solid #5c5a5a;
+        border-radius: 40px;
+        padding: 5px 15px; }
+    main .holder .tag-add {
+      display: flex;
+      align-items: center;
+      margin-top: 2rem; }
+      main .holder .tag-add input {
+        font-size: 18px;
+        border-radius: 20px;
+        border: 2px solid black;
+        padding: 7px 14px;
+        margin-right: 1rem; }
+      main .holder .tag-add .add {
+        margin-top: 0; }
+    main .holder .add {
+      font-size: 30px;
+      background: #2196f3;
+      color: #fff9f9;
+      padding: 0px 20px;
+      margin-top: 1rem;
+      border-radius: 40px;
+      outline: 2px solid black; }
+    main .holder textarea {
+      width: 100%;
+      font-size: 20px;
+      padding: 10px 20px;
+      min-height: 160px;
+      border: 2px solid gray;
+      border-radius: 15px; }
+  main .save {
+    font-size: 25px;
+    font-weight: bold;
+    background: green;
+    padding: 7px 20px;
+    border-radius: 30px;
+    color: white;
+    box-shadow: 2px 3px 2px #3a3a3a;
+    transform: translateY(-2px);
+    transition: all 0.2s linear; }
+    main .save:hover {
+      box-shadow: none;
+      transform: translateY(0); }

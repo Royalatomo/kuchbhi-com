@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KuchBhi</title>
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/default.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-logo">
+                <a href="/">
+                    <img src="/assets/kuchbhi.png" alt="Logo">
+                </a>
+            </div>
+
+            <div class="header-location">
+                <a href="/my-account.html">
+                    <p class="header-location--text"></p>
+                </a>
+            </div>
+        </div>
+
+        <span class="header-search-container">
+            <div class="header-searchbox">
+                <input type="text" placeholder="Search Here...">
+                <img src="/assets/search.png" alt="search">
+            </div>
+
+            <div class="hamburger">
+                <img src="/assets/hamburger.png" alt="hamburger" class="ham-icon">
+                <ul class="hamburger-options">
+                    <li class="close-btn"><img src="/assets/close.png" alt=""></li>
+                    <li><a href="/">Home</a></li>
+                    <li><a class="mob-change-add" href="/my-account.html">Address Change</a></li>
+                    <li><a class="mob-orders" href="/orders.html">Orders</a></li>
+                    <li><a href="/cart.html">Cart</a></li>
+                </ul>
+            </div>
+        </span>
+
+        <div class="container">
+            <a href="/orders.html" class="header-orders">Orders</a>
+
+            <a href="/cart.html">
+                <div class="header-cart">
+                    <img src="/assets/cart.png" alt="Logo">
+                    <div class="cart-item-count">0</div>
+                </div>
+            </a>
+        </div>
+    </header>
+
+    <section class="slider">
+        <div class="left-arrow arrow"><img src="/assets/arrow.png" alt="left-arrow"></div>
+        <div class="right-arrow arrow"><img src="/assets/arrow.png" alt="left-arrow"></div>
+        <div class="slider-images">
+        </div>
+    </section>
+
+    <main>
+        <section class="products categories">
+            <h3 class="products-heading">categories</h3>
+
+            <div class="categories-items">
+                <div class="item--box item--box--1">
+                    <a href="/categories">
+                        <h4>Mobile</h4>
+                    </a>
+                </div>
+
+                <div class="item--box item--box--2">
+                    <a href="/categories">
+                        <h4>Laptop</h4>
+                    </a>
+                </div>
+
+                <div class="item--box item--box--3">
+                    <a href="/categories">
+                        <h4>Fashion</h4>
+                    </a>
+                </div>
+
+                <div class="item--box item--box--4">
+                    <a href="/categories">
+                        <h4>Books</h4>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script type="module" src="./js/home.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+@mixin loadmore {
+  display: none;
+  font-size: 22px;
+  font-weight: bold;
+  background: wheat;
+  padding: 9px;
+  border-radius: 40px;
+  border: 2px solid #795548;
+  box-shadow: 2px 2px 4px #6c6c6c;
+  transform: translateY(-2px);
+  transition: all 0.2s linear;
+
+  &:hover {
+    box-shadow: none;
+    transform: translateY(0);
+  }
+
+  &.active {
+    display: block;
+  }
+}

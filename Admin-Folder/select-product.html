@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Add New Product</title>
+    <link rel="stylesheet" href="/css/select-product.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-logo">
+            <a href="/">
+                <img src="/assets/kuchbhi.png" alt="Logo">
+            </a>
+        </div>
+        <div class="container">
+            <a href="/product.html">Product</a>
+            <a href="/users.html">Manage Users</a>
+            <a href="/site-update.html">Site Update</a>
+            <button class="logout">Logout</button>
+        </div>
+
+        <div class="hamburger">
+            <img src="/assets/hamburger.png" alt="hamburger" class="ham-icon">
+            <ul class="hamburger-options">
+                <li class="close-btn"><img src="/assets/close.png" alt=""></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/product.html">Product</a></li>
+                <li><a href="/users.html">Manage Users</a></li>
+                <li><a href="/site-update.html">Site Update</a></li>
+                <li><button class="logout">Logout</button></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="holder images">
+            <h2 class="heading">Images</h2>
+            <div class="input-container">
+                <div class="input">
+                    <input type="text" placeholder="ImageKit Link">
+                    <img src="./assets/close.png" alt="">
+                </div>
+            </div>
+            <button class="add">+</button>
+        </div>
+
+        <div class="holder info">
+            <h2 class="heading">Info</h2>
+            <div class="input-container">
+                <div class="input-labeled">
+                    <label for="brand">Brand: </label>
+                    <input type="text" placeholder="Brand Name" id="brand">
+                </div>
+
+                <div class="input-labeled">
+                    <label for="name">Name: </label>
+                    <input type="text" placeholder="Product Name" id="name">
+                </div>
+
+                <div class="input-labeled">
+                    <label for="stars">Stars: </label>
+                    <input type="number" placeholder="Number of Stars" id="stars">
+                </div>
+
+                <div class="input-labeled">
+                    <label for="review">Reviews: </label>
+                    <input type="number" placeholder="Number of Reviews" id="review">
+                </div>
+
+                <div class="input-labeled">
+                    <label for="price">Price: </label>
+                    <input type="number" placeholder="Product Price" id="price">
+                </div>
+            </div>
+        </div>
+
+        <div class="holder tags">
+            <h2 class="heading">Tags</h2>
+            <div class="tag-container">
+            </div>
+
+            <div class="tag-add">
+                <input type="text" placeholder="Add New Tag...">
+                <button class="add">+</button>
+            </div>
+        </div>
+
+        <div class="holder delivery">
+            <h2 class="heading">Delivery</h2>
+            <div class="card-container">
+            </div>
+
+            <div class="card-add">
+                <input type="text" placeholder="Enter City" class="city">
+                <input type="number" placeholder="Deliver Time" class="time">
+                <button class="add">+</button>
+            </div>
+        </div>
+
+        <div class="holder about">
+            <h2 class="heading">About This Product</h2>
+            <textarea placeholder="Write about this product..."></textarea>
+        </div>
+
+        <button class="save">Save</button>
+    </main>
+
+    <script type="module" src="./js/select-product.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product - Watch</title>
+    <link rel="stylesheet" href="/css/product.css">
+    <link rel="stylesheet" href="/css/default.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-logo">
+                <a href="/">
+                    <img src="/assets/kuchbhi.png" alt="Logo">
+                </a>
+            </div>
+
+            <div class="header-location">
+                <a href="/my-account.html">
+                    <p class="header-location--text"></p>
+                </a>
+            </div>
+        </div>
+
+        <span class="header-search-container">
+            <div class="header-searchbox">
+                <input type="text" placeholder="Search Here...">
+                <img src="/assets/search.png" alt="search">
+            </div>
+
+            <div class="hamburger">
+                <img src="/assets/hamburger.png" alt="hamburger" class="ham-icon">
+                <ul class="hamburger-options">
+                    <li class="close-btn"><img src="/assets/close.png" alt=""></li>
+                    <li><a href="/">Home</a></li>
+                    <li><a class="mob-change-add" href="/my-account.html">Address Change</a></li>
+                    <li><a class="mob-orders" href="/orders.html">Orders</a></li>
+                    <li><a href="/cart.html">Cart</a></li>
+                </ul>
+            </div>
+        </span>
+
+        <div class="container">
+            <a href="/orders.html" class="header-orders">Orders</a>
+
+            <a href="/cart.html">
+                <div class="header-cart">
+                    <img src="/assets/cart.png" alt="Logo">
+                    <div class="cart-item-count">0</div>
+                </div>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <div class="back-btn">
+            <img src="/assets/arrow.png" alt="back-arrow" class="left-arrow">
+            <p>Go Back</p>
+        </div>
+
+        <div class="product-section">
+            <div class="product-image-area">
+                <div class="image-navigate">
+                </div>
+                <div class="display-image">
+                    <img data-position="1" src=""
+                        alt="product-image" class="main-image">
+                    <div class="left-arrow">
+                        <img src="/assets/arrow.png" alt="left-arrow">
+                    </div>
+                    <div class="right-arrow">
+                        <img src="/assets/arrow.png" alt="right-arrow">
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-details-area">
+                <p class="brand-name">Brand: <span></span></p>
+                <div class="product-name"></div>
+
+                <div class="container">
+                    <div class="reviews">
+                        <img src="/assets/fill-star.png" alt="filled-star">
+                        <img src="/assets/fill-star.png" alt="filled-star">
+                        <img src="/assets/fill-star.png" alt="filled-star">
+                        <img src="/assets/fill-star.png" alt="filled-star">
+                        <img src="/assets/empty-star.png" alt="empty-star">
+                        <p class="total-reviews">50</p>
+                    </div>
+                    <div class="quantity">
+                        <button class="decrease">-</button>
+                        <p class="qty-input">Qty: <span>1</span></p>
+                        <button class="increase">+</button>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <p class="delivery-date">Deliver In: <span>10</span> Days</p>
+                    <p class="price"><small>₹</small>400</p>
+                </div>
+
+                <div class="cart-adding">
+                    <p>Add To Cart</p>
+                    <img src="/assets/cart.png" alt="add-to-cart-icon">
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="about-product">
+            <h2 class="heading">About This Product</h2>
+            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, fugit. Quaerat, repellat quidem voluptatum dignissimos aliquid nesciunt? Aspernatur, nisi nam ea placeat corrupti error voluptatibus asperiores nostrum explicabo, consequuntur id adipisci atque nesciunt facere maiores assumenda exercitationem aperiam quibusdam dolore modi suscipit consequatur esse blanditiis provident. Earum, at recusandae. Alias nesciunt officia maiores sapiente adipisci ea sed ut accusamus qui?</p>
+        </div>
+    </main>
+    <script type="module" src="/js/product.js"></script>
+</body>
+
+</html>

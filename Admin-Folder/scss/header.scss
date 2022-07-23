@@ -1,0 +1,128 @@
+$primaryColor: #ffc100;
+$primaryBorder: #c98600;
+$primaryText: #793d00;
+$primaryLight: #f9e8a1;
+
+$headerBtnBorder: #6a8c00;
+$headerBtnBg: #c6ff6d52;
+$headerBtnColor: #182600;
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background: $primaryLight;
+  padding: 15px 10px;
+
+  @media screen and (max-width: 500px) {
+    justify-content: center;
+  }
+
+  @media screen and (max-width: 500px) {
+    justify-content: space-evenly;
+  }
+
+
+  .header-logo {
+    margin: 0 auto;
+
+    img {
+      width: 150px;
+      margin-right: 2rem;
+      cursor: pointer;
+    }
+
+    @media screen and (max-width: 930px) {
+      max-width: 120px;
+    }
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: space-evenly;
+
+    a, button {
+      font-size: 23px;
+      font-weight: bold;
+      letter-spacing: 1px;
+
+      &:hover, &.active {
+        color: #03a9f4;
+        text-shadow: 1px 1px 2px #00000078;
+      }
+    }
+
+    button {
+      
+      &:hover {
+        color: #e91e63;
+      }
+    }
+
+    @media screen and (max-width: 440px) {
+      width: 100%;
+    }
+
+    @media screen and (max-width: 730px) {
+      display: none;
+    }
+  }
+
+  .hamburger {
+    margin: 0 auto;
+    .hamburger-options {
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 70vw;
+      height: 100vh;
+      list-style: none;
+      background: $primaryLight;
+      border: 2px solid $primaryBorder;
+      padding: 3rem 1rem;
+      transform: translateX(100%);
+      transition: transform 0.3s linear;
+      opacity: 0;
+      z-index: -20;
+
+      li a, li button {
+        font-size: 25px;
+        line-height: 2;
+        font-weight: bold;
+        color: $primaryText;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      .close-btn {
+        text-align: end;
+      }
+
+      @media screen and (max-width: 730px) {
+        opacity: 1;
+        z-index: 20;
+      }
+
+      @media screen and (max-width: 400px) {
+        width: 100vw;
+      }
+    }
+
+    .ham-icon {
+      width: 25px;
+      display: none;
+
+      @media screen and (max-width: 730px) {
+        display: block;
+      }
+    }
+  }
+
+  .hamburger-options.active {
+    transform: translateX(0);
+  }
+}

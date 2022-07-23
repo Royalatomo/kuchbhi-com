@@ -1,0 +1,12 @@
+@import "./header.scss";
+@import "./default.scss";
+
+.msg {
+  padding: 3rem;
+  text-align: center;
+  line-height: 1.5;
+
+  h3 {
+    color: #9e9e9e;
+  }
+}

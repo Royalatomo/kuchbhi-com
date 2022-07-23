@@ -1,0 +1,344 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  background: #f9e8a1;
+  padding: 15px 10px; }
+  @media screen and (max-width: 500px) {
+    .header {
+      justify-content: center; } }
+  .header .container {
+    display: flex;
+    align-items: center; }
+    .header .container .header-logo {
+      margin: 0 auto; }
+      .header .container .header-logo img {
+        width: 150px;
+        margin-right: 2rem;
+        cursor: pointer; }
+      @media screen and (max-width: 930px) {
+        .header .container .header-logo {
+          max-width: 120px; } }
+    .header .container .header-location {
+      outline: 2px solid #6a8c00;
+      border-radius: 10px;
+      padding: 8px 20px;
+      background: #c6ff6d52;
+      margin: auto;
+      cursor: pointer;
+      transition: all 0.2s linear; }
+      .header .container .header-location a {
+        color: #182600;
+        font-size: 16px; }
+      .header .container .header-location:hover {
+        background-color: rgba(98, 160, 0, 0.321569);
+        outline: 3px solid #6a8c00; }
+      .header .container .header-location .header-location--text strong {
+        border: none;
+        background: none;
+        font-weight: bold;
+        font-size: 16px;
+        color: #000000; }
+      @media screen and (max-width: 930px) {
+        .header .container .header-location {
+          display: none; } }
+    @media screen and (max-width: 440px) {
+      .header .container {
+        width: 100%; } }
+  .header .container:last-child {
+    justify-content: flex-end;
+    margin-right: 2rem; }
+    .header .container:last-child .header-orders {
+      margin: auto;
+      border: none;
+      outline: 2px solid #6a8c00;
+      color: #182600;
+      font-weight: bold;
+      padding: 10px 20px;
+      font-size: 1.2rem;
+      border-radius: 20px;
+      background: #c6ff6d52;
+      margin-right: 2rem;
+      transition: all 0.2s linear; }
+      .header .container:last-child .header-orders:hover {
+        background-color: rgba(98, 160, 0, 0.321569);
+        outline: 3px solid #6a8c00; }
+    .header .container:last-child .header-cart {
+      height: 35px;
+      position: relative; }
+      .header .container:last-child .header-cart img {
+        width: 100%;
+        height: 100%; }
+      .header .container:last-child .header-cart .cart-item-count {
+        position: absolute;
+        top: -5px;
+        right: -5px;
+        background: red;
+        color: white;
+        font-weight: bold;
+        padding: 1px 5px;
+        border-radius: 50%; }
+    @media screen and (max-width: 930px) {
+      .header .container:last-child {
+        display: none; } }
+  .header .header-search-container {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    flex: 1; }
+    @media screen and (max-width: 440px) {
+      .header .header-search-container {
+        flex-direction: column;
+        padding: 0; } }
+  .header .header-searchbox {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 30px;
+    border: 2px solid #c98600;
+    background: white;
+    padding-left: 1.5rem;
+    margin: 0 1rem;
+    flex: 1;
+    min-width: 240px; }
+    @media screen and (max-width: 440px) {
+      .header .header-searchbox {
+        margin-bottom: 1rem; } }
+    .header .header-searchbox input {
+      color: #793d00;
+      font-size: 18px;
+      border: none;
+      width: 90%;
+      height: 100%;
+      padding-right: 10px; }
+      .header .header-searchbox input::placeholder {
+        font-weight: bold;
+        color: #793d00;
+        font-size: 16px; }
+      .header .header-searchbox input:focus {
+        outline: none; }
+    .header .header-searchbox img {
+      width: 10%;
+      padding: 10px;
+      background: #ffc100;
+      border-left: 2px solid #c98600;
+      cursor: pointer;
+      max-width: 49px;
+      margin-left: auto;
+      min-width: 42px; }
+  .header .hamburger .hamburger-options {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 70vw;
+    height: 100vh;
+    list-style: none;
+    background: #f9e8a1;
+    border: 2px solid #c98600;
+    padding: 3rem 1rem;
+    transform: translateX(100%);
+    transition: transform 0.3s linear;
+    opacity: 0;
+    z-index: -20; }
+    .header .hamburger .hamburger-options li a {
+      font-size: 25px;
+      line-height: 2;
+      font-weight: bold;
+      color: #793d00; }
+      .header .hamburger .hamburger-options li a:hover {
+        text-decoration: underline; }
+    .header .hamburger .hamburger-options .close-btn {
+      text-align: end; }
+    @media screen and (max-width: 930px) {
+      .header .hamburger .hamburger-options {
+        opacity: 1;
+        z-index: 20; } }
+    @media screen and (max-width: 400px) {
+      .header .hamburger .hamburger-options {
+        width: 100vw; } }
+  .header .hamburger .ham-icon {
+    width: 25px;
+    display: none; }
+    @media screen and (max-width: 930px) {
+      .header .hamburger .ham-icon {
+        display: block; } }
+  .header .hamburger-options.active {
+    transform: translateX(0); }
+
+.slider {
+  position: relative;
+  height: 600px; }
+  .slider .arrow {
+    position: absolute;
+    top: 50%;
+    background: white;
+    border-radius: 50%;
+    border: 2px solid black;
+    cursor: pointer;
+    transition: all 0.2s linear;
+    z-index: 5; }
+    .slider .arrow img {
+      height: 65px; }
+    .slider .arrow:hover {
+      background: #e0e0e0;
+      box-shadow: 0px 0px 15px white; }
+      .slider .arrow:hover img {
+        height: 63px; }
+  .slider .left-arrow {
+    transform: rotateY(180deg);
+    left: 5%; }
+  .slider .right-arrow {
+    right: 6%; }
+  .slider .slider-images {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    background: #ffea6633; }
+    .slider .slider-images img {
+      width: 97%;
+      border-radius: 30px;
+      object-fit: cover;
+      height: 600px;
+      opacity: 0;
+      transition: opacity 0.2s linear;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+    .slider .slider-images img.active {
+      opacity: 1; }
+  @media screen and (max-width: 700px) {
+    .slider {
+      display: none; } }
+
+main {
+  padding: 4rem 2rem; }
+
+.products {
+  position: relative; }
+  .products .products-heading {
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    font-weight: bold; }
+  .products .left-arrow,
+  .products .right-arrow {
+    transition: all 0.3s linear;
+    cursor: pointer;
+    border-radius: 50%; }
+    .products .left-arrow img,
+    .products .right-arrow img {
+      width: 60px; }
+    .products .left-arrow:hover,
+    .products .right-arrow:hover {
+      background: #e0e0e0;
+      box-shadow: 0px 0px 15px white; }
+    .products .left-arrow.disable,
+    .products .right-arrow.disable {
+      display: none; }
+  .products .left-arrow {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: rotate(180deg) translateY(50%); }
+    @media screen and (max-width: 700px) {
+      .products .left-arrow {
+        left: -1.5rem; } }
+  .products .right-arrow {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%); }
+    @media screen and (max-width: 700px) {
+      .products .right-arrow {
+        right: -1.5rem; } }
+  .products .products-items {
+    padding: 2rem 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    min-height: 500px; }
+    @media screen and (max-width: 1110px) {
+      .products .products-items {
+        grid-template-columns: 1fr 1fr; } }
+    @media screen and (max-width: 770px) {
+      .products .products-items {
+        grid-template-columns: 1fr; } }
+    @media screen and (max-width: 700px) {
+      .products .products-items {
+        padding: 2rem 1rem; } }
+    .products .products-items--box {
+      width: fit-content;
+      padding: 20px;
+      max-width: 270px;
+      margin: auto; }
+      .products .products-items--box img {
+        width: 100%;
+        height: 100%; }
+      .products .products-items--box .product-head {
+        position: relative;
+        margin-bottom: 1rem; }
+        .products .products-items--box .product-head .price-tag {
+          position: absolute;
+          top: -7%;
+          right: -10%;
+          font-size: 25px;
+          font-weight: bold;
+          background: red;
+          color: white;
+          padding: 3px 11px;
+          border-radius: 20px;
+          transform: rotateZ(25deg); }
+          .products .products-items--box .product-head .price-tag small {
+            font-size: 15px;
+            margin-right: 3px; }
+      .products .products-items--box .product-name {
+        font-size: 17px;
+        line-height: 1.4; }
+
+.categories-items {
+  padding: 3rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 2rem; }
+  @media screen and (max-width: 1110px) {
+    .categories-items {
+      grid-template-columns: 1fr 1fr; } }
+  @media screen and (max-width: 700px) {
+    .categories-items {
+      grid-template-columns: 1fr; } }
+  .categories-items .item--box {
+    text-align: center;
+    border: 3px solid black;
+    min-height: 341px;
+    display: grid;
+    place-content: center;
+    font-size: 2rem;
+    border-radius: 25px;
+    background-position: center;
+    background-size: cover;
+    transition: all 0.3s ease-in-out;
+    filter: grayscale(0.5); }
+    @media screen and (max-width: 400px) {
+      .categories-items .item--box {
+        min-height: 235px; } }
+    .categories-items .item--box a {
+      transition: all 0.3s ease-in-out;
+      cursor: pointer;
+      color: black; }
+    .categories-items .item--box:hover {
+      filter: grayscale(0); }
+      .categories-items .item--box:hover a {
+        background: #000000;
+        padding: 7px 30px;
+        color: white;
+        border-radius: 30px; }
+  .categories-items .item--box--1 {
+    background-image: url("https://thumbor.forbes.com/thumbor/fit-in/900x510/https://www.forbes.com/uk/advisor/wp-content/uploads/2020/11/phones-switch-apps.jpg"); }
+  .categories-items .item--box--2 {
+    background-image: url("https://images.unsplash.com/photo-1618424181497-157f25b6ddd5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bGFwdG9wJTIwY29tcHV0ZXJ8ZW58MHx8MHx8&w=1000&q=80"); }
+  .categories-items .item--box--3 {
+    background-image: url("https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZmFzaGlvbiUyMGJsb2d8ZW58MHx8MHx8&w=1000&q=80"); }
+  .categories-items .item--box--4 {
+    background-image: url("https://images.theconversation.com/files/45159/original/rptgtpxd-1396254731.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=754&fit=clip"); }
